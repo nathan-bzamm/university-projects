@@ -1,0 +1,1 @@
+An online training set containing images of different hand signs was used
