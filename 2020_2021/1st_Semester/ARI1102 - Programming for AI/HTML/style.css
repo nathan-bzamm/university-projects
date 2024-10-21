@@ -1,0 +1,19 @@
+*{
+  font-family: 'Hind Siliguri', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+body{background-color: blue;}
+
+html{
+    position: relative;
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}

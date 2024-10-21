@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Turin</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MAP & WEATHER SCRIPT-->
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+ integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+ crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  </i>ntegrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script src="map.js"> </script>
+  <script src="weather.js"> </script>
+
+
+  <!-- taken from https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+#mapid {
+  height:400px;
+    width: 100%;
+}
+  </style>
+
+</head>
+
+  <body onload="getWeatherDetails()">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class = "container">
+        <a href="homepage.html" class="navbar-brand">Turin</a>
+
+        <!-- to create the Hambergur Menu-->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar1">
+
+          <ul class="navbar-nav ml-auto nav nav-fill w-25">
+            <li class = "nav-item">
+              <a class="nav-link active" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--Introduction paragraph taken from Wikipedia-->
+  <br>
+  <br>
+    <header>
+      <div class="container">
+        <h1>The City of Turin<h1>
+          <p style="font-size: 20px;">Turin is a city and an important business and cultural centre in northern Italy. It is the capital city of Piedmont and of the Metropolitan City of Turin, and was the first Italian capital from 1861 to 1865. The city is mainly on the western bank of the Po River, below its Susa Valley, and is surrounded by the western Alpine arch and Superga Hill. The population of the city proper is 866,42 while the population of the urban area is estimated by Eurostat to be 1.7 million inhabitants. The Turin metropolitan area is estimated by the OECD to have a population of 2.2 million.</p>
+      </div>
+    </header>
+    <img class="img-fluid" src="Turin_at_sunset.jpg" class="rounded">
+    <br>
+    <br>
+    <script src="weather.js">
+    </script>
+    <section class="weather">
+      <div class="container">
+        <div class="sub-container">
+          <h1 class="weatherTitle">Weather Forecast</h1>
+
+          <div class="main">
+
+            <div class="location-and-date">
+              <div id="loc"></div>
+              <div id="date"></div>
+            </div>
+
+            <div class="current-temperature">
+             <div id="temp"></div>
+           </div>
+
+           <div class="current-statistics">
+             <div id="con"></div>
+             <div id="maxtemp"></div>
+             <div id="mintemp"></div>
+           </div>
+
+         </div>
+       </div>
+     </div>
+   </section>
+   <br>
+   <section class ="TheMap">
+   <div class = "container">
+     <h1>Location of Turin</h1>
+     <p style="font-size: 20px;">Here one can find the exact location of Turin geographically.<p>
+     </div>
+    <div id="mapid"></div>
+    <script src="map.js">
+    </script>
+  </div>
+</div>
+</section>
+
+
+  </body>
+
+</html>

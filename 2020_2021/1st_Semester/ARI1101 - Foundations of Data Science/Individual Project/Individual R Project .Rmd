@@ -1,0 +1,94 @@
+---
+author: "Nathan Bonavia Zammit"
+date: "13/02/2021"
+output: 
+  html_document: default
+  pdf_document: default
+title: "Individual Project ARI1101"
+---
+
+Task 1: Queen's Gambit
+(i)Probability of Beth winning the first game is
+```{r}
+probability1 <-(90+50+30)/300
+probability1
+```
+(ii)Probability of Beth winning the second game after she won the first game
+```{r}
+probability2 <-probability1*probability1
+probability2
+```
+(iii)
+When assuming that the outcomes of the games are independent, one is just assuming that every player has the same skill level.  However when one assumes that each game is conditionally independent given the opponent's skill level, it makes more sense since no player is the same as another and as such the probability of winning is different
+
+Task 2: Conditionitis
+```{r}
+D1 = 0.05
+D0 = 0.95
+T1D1 = 0.90
+T0D1 = 0.10
+T1D0 = 0.01
+T0D0 = 0.99
+
+T1 = (D1*T1D1) + (D0*T1D0)
+T1
+
+P_D1T1 = (D1*T1D1)/T1
+P_D1T1
+
+T0 = (D1*T0D1)+(D0*T0D0)
+T0
+
+P_D1T0 = (D1*T0D1)/T0
+P_D1T0
+```
+P(D|T) = 83%
+P(D|Tc) = 0.0053%
+
+Task 3: Hypo-Headaches
+(i)
+The parameter of interest refers to the percentage of people that suffer from "hypo-headaches" that would have nausea as a side effect of taking the new drug.
+
+(ii)
+The null hypothesis refers to the opposite claim that is attempted to be proven.  As such in the given context the null hypothesis could be written as 
+ H0: p =  0.14.
+
+The alternative hypothesis is a clear and concise statement of the initial claim. i.e the alternative hypothesis refers to what one believes or hopes to be true.  In this context the alternative hypothesis could be written as H1: p>0.14.
+
+(iii)Hypothesis test to determine if the EMA should reject the drug or not
+```{r}
+p0 = 0.14
+p = 70/400
+p
+z = (p-p0)/sqrt((p0*(1-p0))/400)
+z
+p_value = 1-0.9778
+p_value
+alpha = 0.05
+alpha>p_value
+```
+z represents the test statistic
+To find the p-value we check the z score table, and since the area below 2.01 is 0.9778 we subtract 0.9778 from 1 to obtain the p-value.
+Since the null hypothesis is rejected, then ,ore than 14% of the population will experience nausea, and the drug will be rejected by the EMA.
+
+Task 4: Spam filters
+(i)
+```{r}
+S1 = 0.8
+F1S1 = 0.1
+F1 = (0.1*0.8) + (0.01*0.2)
+P_S1F1 = (F1S1*S1)/F1
+P_S1F1
+```
+(ii)
+
+```{r}
+M1M2L = (0.9*0.9)
+L = 0.1
+M1M2Lc = (0.1*0.1)
+Lc = 0.9
+
+P_LM1M2 = (M1M2L*L)/((M1M2L*L)+(M1M2Lc*Lc))
+P_LM1M2
+```
+This was done via the use of Bayes' rule

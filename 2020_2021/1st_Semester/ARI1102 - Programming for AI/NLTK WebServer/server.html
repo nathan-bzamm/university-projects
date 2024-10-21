@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>NLTK Server</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function postFieldDataToOurServer ()
+    {
+      var fdata = new FormData ();
+      var request = new XMLHttpRequest ();
+      var jresp;
+      var field = document.getElementById ("field");
+
+      //populate the data that we are going to send
+      fdata.append ("field", field.value);
+
+      //send the Data
+      request.open ("POST", "/python2", false);
+      request.send (fdata);
+
+
+      //receive and parse the output Data
+      jresp = JSON.parse (request.responseText);
+      console.log (jresp);
+
+      if(document.getElementById("field").value == '')
+      {
+        alert("The textarea cannot be empty");
+      }
+      else if(jresp.english.length != 1){
+        alert("The inputted text must be in English!");
+      }
+      else if(jresp.error.length !=0){
+        alert("Please enter text with correct grammar and orthogrophy");
+      }
+
+      persons.innerHTML = jresp["B-PERSON"];
+      locations.innerHTML = jresp["B-GPE"];
+      organizations.innerHTML= jresp["B-ORGANIZATION"];
+
+    }
+
+  </script>
+
+  <!-- taken from https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+      <div class= "Intro">
+        <h1>Online NLTK Program<h1>
+          <p style="font-size: 15px;">Please enter a complete sentence in the  text box below. Correct grammar and orthogrophy are recommended.<p>
+          </div>
+  </header>
+
+  <div class="container p-3 my-3 border bg-info text-white">
+  <label for="comment">Enter Text Here:</label>
+  <br>
+  <textarea class="container" rows="5" columns = "50" id="field"></textarea>
+</div>
+  <div class = "container">
+    <div class="center">
+  <button type="button" id = "The_Button" class = "btn btn-primary" onclick="postFieldDataToOurServer()">Enter</button>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class = "Intro">
+    <h1>POS visualisation<h1>
+      <p style ="font-size: 15px;">The text which you inputted should be displayed based off of the colours one can see below</p>
+    </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="colors">
+            <div class="tagAdjective" style = "background-color:red;">Adjective</div>
+            <div class="tagAdverb" style = "background-color:yellow;">Adverb</div>
+            <div class="tagConjunction" style = "background-color:green;">Conjunction</div>
+            <div class="tagInterjection" style = "background-color:tan;">Interjection</div>
+            <div class="tagNoun" style = "background-color:orange;">Noun</div>
+            <div class="tagNumber" style = "background-color:salmon;">Number</div>
+            <div class="tagPreposition" style = "background-color:darkorchid;">Preposition</div>
+            <div class="tagPronoun" style = "background-color:yellow;">Pronoun</div>
+            <div class="tagVerb" style = "background-color:red;">Verb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <div id = "People">Persons<div id = "persons"></div></div>
+  <div id = "Areas">Locations<div id = "locations"></div></div>
+  <div id = "Companies">Organizations<div id = "organizations"></div></div>
+</body>
+
+</html>
