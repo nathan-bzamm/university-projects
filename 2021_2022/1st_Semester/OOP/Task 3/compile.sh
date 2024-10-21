@@ -1,0 +1,1 @@
+g++ -std=c++2a -Wall -o Task3 main.cpp
