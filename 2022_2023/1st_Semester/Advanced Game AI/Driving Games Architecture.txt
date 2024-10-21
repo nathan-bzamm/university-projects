@@ -1,0 +1,57 @@
+Architecture in Driving Games
+
+Slide 1: 
+Divided into 3
+
+Supporting Technology: Used to Track Data
+Tactical/Strateguc AI Decision Making: FSM or Fuzzy Systems are often used
+Movement: Sensitive Steering
+
+Slide 2:
+In the Driving Genre the main focus of AI is on the movement of the other NPCs
+Their movement must seem realistic in their goasl (in most driving games trying to finish first)
+In order to achieve this, tactical reasoning and route finding are often used together
+
+Slide 4:
+Driving Line
+In most Racing games a driving line is set.
+The driving/racing line allows the car to reach top speeds easily with usually minimal steering being required since predefined paths are used.
+This is different in Driving games.
+	- The racing line cannot always be followed due to different physics and race conditions come in to play.
+
+Slide 3:
+AI Driver:
+
+An AI driver will drive the car in similar conditions to the player.
+This means that both the car conditions, race conditions, and overall physics which the player usually has to cope wth must also be handled by these AI Drivers.
+This gives a more realistic feel and based of the difficulty of the AI it would make the races harder and more entertaining.
+
+Slide 4:
+Chase The Rabbit
+
+The Rabbit being referred to is an invisible target whch is moved along the racing line via the direct position update method.
+Any AI drivers are programmed to simply follow said rabbit.
+Since the rabbit is always in front, the rabbit starts to turn corners first which therefore makes sure that the AI Drivers steer at the right point
+Cars automatically begin steering well before the corner, however if corners are severe the physics of the game makes the back of the car slip out more often than not 
+This makes the game feel more natural as mentioned before.
+
+Slide 5:
+Examples: 
+F1 Games
+
+In the F1 series, AI is used to do as mentioned, opposing drivers will drive along the racing line (which can be made visible to the main player aswell), and try to follow an invisible target and overtake other drivers.
+The difference is that the level of AI can be adjusted.
+By doing so the opposing drivers will vary in difficulty.
+For Example the highest level of AI can adjust to the race conditions, physics and so forth much better than a low level AI. 
+Some would even say the highest level is almost as difficult as irl performances.
+
+Slide 6:
+Example 2:
+Need for Speed
+
+The need for speed games are often seen as the go to generic racing games.
+The player plays against AI drivers who vary on difficultly based on the level and track and upgrades on the car.
+These cars are often generated through the use of AI and can differ based on the tracks and type of level giving the AI more of an advantage.
+
+
+

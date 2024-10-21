@@ -1,0 +1,30 @@
+Post Mortem
+
+Project Overview:
+Theme: Quality Education
+
+The game idea was to create various levels that mimic real life animal habitats and environments in a very basic and understandable way 
+The target audience was kids around 6-8 years old as they were very simple games with designs catered to younger audiences
+The goal was to educate players on the different animals and habitats around the world and how they live their lives, whether that be by teaching them what they hunt, or if they have any hinderances in vision these were mimicked to give them a more lifelike feel.
+
+What went right (10 things)
+Team roles were decided straight away and this helped when it came to presentations and team leading, and so forth
+Target Theme was reached with an interesting twist which can also be built on upon
+Presentation went very well as the game ran smoothly and with no errors
+Implementation of AI Techniques was very efficient 
+
+
+What went wrong (10 things)
+Team was a bit dependent on 3rd year as certain aspects were harder to implement than others
+The graphics students weren't the most useful which led to very choppy animations
+Divison of work could have been better as certain students were overexhausted at the end of the day
+Allocation of time was not done correctly and as such, the bulk of the work was left to the end
+Certain bugs occurred whenever we transferred files from one person to another which was causing us problems to compile the final game
+
+Risk Management:
+Time allocation and management needs to be done better as last minute testing is not really the best idea
+
+Mid-Project Changes:
+At first we had a different idea in mind however due to logical reasons, and due to the short time limit it had to be changed
+This wasn't the most ideal as we were scrapped 
+
