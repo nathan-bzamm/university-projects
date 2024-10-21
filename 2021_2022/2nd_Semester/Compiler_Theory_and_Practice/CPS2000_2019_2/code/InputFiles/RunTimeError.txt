@@ -1,0 +1,1 @@
+return 5/0; // runtime error division by 0

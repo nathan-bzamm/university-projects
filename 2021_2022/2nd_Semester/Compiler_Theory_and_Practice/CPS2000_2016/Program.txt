@@ -1,0 +1,13 @@
+def square(x : real) : real {
+    return x*x;
+}
+def is_greater_than(z:real, x : real, y : real) : bool {
+    var ans : bool = true;
+    if (z > x) {
+       set ans = false;
+    }
+    return ans;
+}
+var y:real = 5.;
+print y;
+print is_greater_than(1.0, square(1.5), 2.0);

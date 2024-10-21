@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/main.cpp.o -c /home/nathan/hello/main.cpp",
+  "file": "/home/nathan/hello/main.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Lexer/Token.cpp.o -c /home/nathan/hello/Lexer/Token.cpp",
+  "file": "/home/nathan/hello/Lexer/Token.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Lexer/Lexer.cpp.o -c /home/nathan/hello/Lexer/Lexer.cpp",
+  "file": "/home/nathan/hello/Lexer/Lexer.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Helper/Helper.cpp.o -c /home/nathan/hello/Helper/Helper.cpp",
+  "file": "/home/nathan/hello/Helper/Helper.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Parser/TokenManager.cpp.o -c /home/nathan/hello/Parser/TokenManager.cpp",
+  "file": "/home/nathan/hello/Parser/TokenManager.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Parser/Parser.cpp.o -c /home/nathan/hello/Parser/Parser.cpp",
+  "file": "/home/nathan/hello/Parser/Parser.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Parser/AST.cpp.o -c /home/nathan/hello/Parser/AST.cpp",
+  "file": "/home/nathan/hello/Parser/AST.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Visitor/XMLVisitor.cpp.o -c /home/nathan/hello/Visitor/XMLVisitor.cpp",
+  "file": "/home/nathan/hello/Visitor/XMLVisitor.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Visitor/SAVisitor.cpp.o -c /home/nathan/hello/Visitor/SAVisitor.cpp",
+  "file": "/home/nathan/hello/Visitor/SAVisitor.cpp"
+},
+{
+  "directory": "/home/nathan/hello/build",
+  "command": "/bin/c++    -g   -o CMakeFiles/compile.dir/Visitor/IVisitor.cpp.o -c /home/nathan/hello/Visitor/IVisitor.cpp",
+  "file": "/home/nathan/hello/Visitor/IVisitor.cpp"
+}
+]

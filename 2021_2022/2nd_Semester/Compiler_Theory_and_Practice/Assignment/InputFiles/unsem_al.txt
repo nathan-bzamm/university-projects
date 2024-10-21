@@ -1,0 +1,11 @@
+fn u():bool{
+    if(4>6) {
+        return true;
+    }else{
+        if(5>6){
+            return true;
+        }else{
+            //return true;
+        }
+    }
+}

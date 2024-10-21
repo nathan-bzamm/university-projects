@@ -1,0 +1,12 @@
+< <= > >= == != and or not
+if else for while fn return bool float int var
+= + - * /
+someid true false 12.3 .7 44 75
+: ; ,
+() {}
+// hello world
+/* hello 
+world
+multiline */
+
+//$ // comment this to avoid lexing error

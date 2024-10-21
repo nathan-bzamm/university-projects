@@ -1,0 +1,7 @@
+print 3/2; // prints 1.5
+
+var x:int = 3/2; // makes x = 1
+print x;
+
+var y:float = 3/2; // makes y = 1.5
+print y;

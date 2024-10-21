@@ -1,0 +1,23 @@
+//Function definition for Power
+fn Pow(x:float, n:int) : float
+{
+    var y : float = 1.0;
+    if(n>0)
+    {
+        for(; n>0 ; n=n-1)
+        {
+            y = y * x;
+        }
+    }
+    else
+    {
+        for(; n<0; n=n+1)
+        {
+            y = y / x;
+        }
+    }
+    return y;
+}
+
+print Pow(3.0,3); //27
+print Pow(4.0,-2); //0.0625

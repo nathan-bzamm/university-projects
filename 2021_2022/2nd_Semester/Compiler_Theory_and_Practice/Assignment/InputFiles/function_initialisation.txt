@@ -1,0 +1,5 @@
+print increment(4); // note how the function is decalred after use
+
+fn increment(x:int) : int{
+	return x+1;
+}

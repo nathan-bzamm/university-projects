@@ -1,0 +1,14 @@
+var x:int = 9; // should be int(change 9.8 to 8)
+var y:float = 9.8; // already defined (change x to y)
+var z:bool = false and true; // + should be and/or
+
+fn AddAndIncrement(x:float, y:float):float{
+	return (x+y)+1;
+}
+
+fn something():int{
+	return -1;
+}
+
+print AddAndIncrement(3, 5.3); // true should be some float
+print something(); // incorrect parameters

@@ -1,0 +1,12 @@
+fn func():bool{
+	if(true){
+		return true;
+		if(true){
+			return true;
+		}else{
+			return true;
+		}
+	}else{
+		return true;
+	}
+}
